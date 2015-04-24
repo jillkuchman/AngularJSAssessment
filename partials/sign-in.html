@@ -1,5 +1,5 @@
 <h1>Please sign in</h1>
 
 <li ng-repeat='item in students'>
-    {{ item.name }}
+    {{ item.name }} <button ng-click="signIn(item)" ng-show="!item.signedin">Sign In</button><button ng-click="signOut(item)" ng-show="item.signedin">Sign Out</button>
 </li>

@@ -2,6 +2,10 @@ signIn.controller('AttendanceCtrl', function AttendanceCtrl($scope, StudentsFact
     $scope.students = StudentsFactory.students;
 
     $scope.signIn = function(student){
-        student.signedIn = true;
+        student.signedin = true;
+    };
+
+    $scope.signOut = function(student){
+        student.signedin = false;
     };
 });
