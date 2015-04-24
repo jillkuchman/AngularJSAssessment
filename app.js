@@ -18,6 +18,7 @@ signIn.config(function($stateProvider) {
     //route to attendance page
     $stateProvider.state('attendance', {
         url: 'attendance',
-        templateUrl: 'partials/attendance.html'
+        templateUrl: 'partials/attendance.html',
+        controller: 'AttendanceCtrl'
     });
 });
