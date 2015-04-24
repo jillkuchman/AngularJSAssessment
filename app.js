@@ -12,7 +12,7 @@ signIn.config(function($stateProvider) {
     $stateProvider.state('sign-in', {
         url: 'sign-in',
         templateUrl: 'partials/sign-in.html',
-        controller: 'StudentsCtrl'
+        controller: 'AttendanceCtrl'
     });
 
     //route to attendance page
