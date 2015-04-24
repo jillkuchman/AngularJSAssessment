@@ -1,6 +1,11 @@
 <h1>Who's Here</h1>
 
-<h2 ng-show="students.length && filtered.length">Here</h2>
-<li ng-repeat="item in filtered = ( students | filter:signedin )"></li>
+<h2 ng-show="here.length">Here</h2>
+<li ng-repeat="item in here = ( students | filter:{signedin:true} )">
+    {{ item.name }}
+</li>
 
-<h2 ng-show="students.length && !filtered.length">Not here</h2>
+<h2 ng-show="nothere.length">Not here</h2>
+<li ng-repeat="item in nothere = ( students | filter:{signedin:false} )">
+    {{ item.name }}
+</li>
