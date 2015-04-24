@@ -1,11 +1,21 @@
-<h1>Who's Here</h1>
+<div class='row'>
 
-<h2 ng-show="here.length">Here</h2>
-<li ng-repeat="item in here = ( students | filter:{signedin:true} )">
-    {{ item.name }}
-</li>
+    <h1>Who's Here</h1>
 
-<h2 ng-show="nothere.length">Not here</h2>
-<li ng-repeat="item in nothere = ( students | filter:{signedin:false} )">
-    {{ item.name }}
-</li>
+    <h2 ng-show='here.length'>Here</h2>
+    <li ng-repeat='item in here = ( students | filter:{signedin:true} )'>
+        {{ item.name }}
+    </li>
+
+    <h2 ng-show='nothere.length'>Not here</h2>
+    <li ng-repeat='item in nothere = ( students | filter:{signedin:false} )'>
+        {{ item.name }}
+    </li>
+    
+</div>
+
+<div class='page-footer'>
+    <div class='nav-bar'>
+        <a ui-sref='home'><button>Home</button></a> | <a ui-sref='sign-in'><button>Sign in</button></a>
+    </div>
+</div>

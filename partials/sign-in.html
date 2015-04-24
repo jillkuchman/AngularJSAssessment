@@ -4,4 +4,8 @@
     {{ item.name }} <button ng-click="signIn(item)" ng-show="!item.signedin">Sign In</button><button ng-click="signOut(item)" ng-show="item.signedin">Sign Out</button>
 </li>
 
-<a ui-sref='attendance'><button>Who's here</button></a>
+<div class='page-footer'>
+    <div class='nav-bar'>
+        <a ui-sref='home'><button>Home</button></a> | <a ui-sref='attendance'><button>Who's here</button></a>
+    </div>
+</div>
