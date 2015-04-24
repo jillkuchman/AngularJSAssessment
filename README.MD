@@ -7,9 +7,11 @@ Jill Kuchman
 April 24, 2015
 
 ##Description
-This application will simulate a student roster. Users will be able to add a student to the roster and designate whether permission slips have been returned. Users can also delete students from the roster.
+This application will simulate a sign in page for students in a class. Students can sign in and sign out, and teachers can view which students are in attendance.
 
-This app demonstrates practice using controllers and factories in AngularJS to manipulate the DOM.
+Written for Epicodus Assessment Week 8.
+
+This app demonstrates practice using routing with controllers and factories in AngularJS to manipulate the DOM.
 
 ##Technologies Used
 JavaScript
@@ -23,9 +25,20 @@ CSS with Bootstrap
 
 
 ##Use and Editing
-To use the app, download the files from github. Open the index.html file in the browser of your choice. The webpage will open and allow the visitor to use the site.  <br>
+To use and/or edit the app:<br/>
+
+<ol>
+<li>Cloning this project to the directory of your choice</li>
+<li>Opening the project in your favorite text-editor (optional)</li>
+<li>For Mac Users:
+    In your project folder in the terminal, enter $ python -m SimpleHTTPServer and then navigate to localhost:8000.</li>
+<li>Open and point your browser to index.html
+*(ex: file:///project-directory/index.html)*</li>
+</ol>
 
 ##Copyright (c) Jill Kuchman
+
+####License: [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

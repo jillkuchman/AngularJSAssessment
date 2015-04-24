@@ -3,11 +3,13 @@
         <h1>Attendance</h1>
     </div>
 
+    <!-- List of students with signedin property = true. Only shows up if there are students in this list. -->
     <h3 ng-show='here.length'>Here</h3>
     <li ng-repeat='item in here = ( students | filter:{signedin:true} )'>
         {{ item.name }}
     </li>
 
+    <!-- List of students with signedin property = false. Only shows up if there are students in this list. -->
     <h3 ng-show='nothere.length'>Not here</h3>
     <li ng-repeat='item in nothere = ( students | filter:{signedin:false} )'>
         {{ item.name }}
@@ -16,10 +18,8 @@
 </div>
 
 <hr>
+
+<!-- Navigation bar -->
 <div class='nav-bar'>
     <a ui-sref='home'><button class='btn btn-default'>Home</button></a> | <a ui-sref='sign-in'><button class='btn btn-default'>Sign in</button></a>
-</div>
-
-<div class='page-footer'>
-
 </div>
