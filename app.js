@@ -11,7 +11,8 @@ signIn.config(function($stateProvider) {
     //route to sign in page
     $stateProvider.state('sign-in', {
         url: 'sign-in',
-        templateUrl: 'partials/sign-in.html'
+        templateUrl: 'partials/sign-in.html',
+        controller: 'StudentsCtrl'
     });
 
     //route to attendance page
