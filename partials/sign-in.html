@@ -1,11 +1,12 @@
-<h1>Please sign in</h1>
+<div class='page-header'>
+    <h1>Please sign in</h1>
+</div>
 
 <li ng-repeat='item in students'>
-    {{ item.name }} <button ng-click="signIn(item)" ng-show="!item.signedin">Sign In</button><button ng-click="signOut(item)" ng-show="item.signedin">Sign Out</button>
+    {{ item.name }} <button class='btn btn-info' ng-click="signIn(item)" ng-show="!item.signedin">Sign In</button><button class='btn btn-danger' ng-click="signOut(item)" ng-show="item.signedin">Sign Out</button>
 </li>
 
-<div class='page-footer'>
-    <div class='nav-bar'>
-        <a ui-sref='home'><button>Home</button></a> | <a ui-sref='attendance'><button>Who's here</button></a>
-    </div>
+<hr>
+<div class='nav-bar'>
+    <a ui-sref='home'><button class='btn btn-default'>Home</button></a> | <a ui-sref='attendance'><button class='btn btn-default'>Who's here</button></a>
 </div>

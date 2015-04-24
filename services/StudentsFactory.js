@@ -14,6 +14,6 @@ signIn.factory('StudentsFactory', function StudentsFactory() {
                             {name: 'Tim', signedin: false},
                             {name: 'Francine', signedin: false},
                         ];
-                        
+
     return factory;
 });

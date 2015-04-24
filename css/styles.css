@@ -9,3 +9,27 @@
 .nav-bar {
     text-align:center;
 }
+
+.jumbotron {
+  transform: translateY(50%);
+  text-align:center;
+  background-color: red;
+}
+
+body {
+    background-color: gold;
+    font-family: 'Courier', sans-serif;
+}
+
+li {
+    margin-top:9pt;
+    margin-bottom:9pt;
+}
+
+hr {
+    color: black;
+}
+
+.btn {
+    color:black;
+}

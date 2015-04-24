@@ -1,21 +1,25 @@
 <div class='row'>
+    <div class='page-header'>
+        <h1>Attendance</h1>
+    </div>
 
-    <h1>Who's Here</h1>
-
-    <h2 ng-show='here.length'>Here</h2>
+    <h3 ng-show='here.length'>Here</h3>
     <li ng-repeat='item in here = ( students | filter:{signedin:true} )'>
         {{ item.name }}
     </li>
 
-    <h2 ng-show='nothere.length'>Not here</h2>
+    <h3 ng-show='nothere.length'>Not here</h3>
     <li ng-repeat='item in nothere = ( students | filter:{signedin:false} )'>
         {{ item.name }}
     </li>
-    
+
+</div>
+
+<hr>
+<div class='nav-bar'>
+    <a ui-sref='home'><button class='btn btn-default'>Home</button></a> | <a ui-sref='sign-in'><button class='btn btn-default'>Sign in</button></a>
 </div>
 
 <div class='page-footer'>
-    <div class='nav-bar'>
-        <a ui-sref='home'><button>Home</button></a> | <a ui-sref='sign-in'><button>Sign in</button></a>
-    </div>
+
 </div>
