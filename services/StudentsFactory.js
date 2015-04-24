@@ -1,5 +1,6 @@
 signIn.factory('StudentsFactory', function StudentsFactory() {
     var factory = {};
+
     //hard-coded list of students
     factory.students =  [
                             {name: 'John', signedin: false},
@@ -13,5 +14,6 @@ signIn.factory('StudentsFactory', function StudentsFactory() {
                             {name: 'Tim', signedin: false},
                             {name: 'Francine', signedin: false},
                         ];
+                        
     return factory;
 });
